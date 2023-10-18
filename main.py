@@ -9,5 +9,5 @@ class Tudui(nn.Module):
 
 tudui = Tudui()
 x = torch.tensor(3)
-output = tudui(x)#深度学习中自动调用前向传播forward
+output = tudui(x)
 print(output)
