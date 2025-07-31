@@ -1,0 +1,44 @@
+<svg width="864" height="360" xmlns="http://www.w3.org/2000/svg">
+  <!-- 标题和坐标轴定义 -->
+  <text x="432" y="20" font-size="16" text-anchor="middle" font-weight="bold">MRPC Training Curves</text>
+  
+  <!-- 准确率子图 -->
+  <g transform="translate(50, 50)">
+    <text x="180" y="-10" font-size="14" text-anchor="middle">MRPC Accuracy</text>
+    <!-- X轴 -->
+    <line x1="0" y1="200" x2="360" y2="200" stroke="black" />
+    <text x="180" y="225" font-size="12" text-anchor="middle">Epoch</text>
+    <!-- Y轴 -->
+    <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
+    <text x="-30" y="100" font-size="12" text-anchor="middle" transform="rotate(-90, -30, 100)">Accuracy</text>
+    
+    <!-- 准确率曲线 (0.7892, 0.8536, 0.8879, 0.9012, 0.9125) -->
+    <polyline points="0,100 90,75 180,55 270,45 360,40" fill="none" stroke="blue" stroke-width="2" />
+    <circle cx="0" cy="100" r="4" fill="blue" />
+    <circle cx="90" cy="75" r="4" fill="blue" />
+    <circle cx="180" cy="55" r="4" fill="blue" />
+    <circle cx="270" cy="45" r="4" fill="blue" />
+    <circle cx="360" cy="40" r="4" fill="blue" />
+    <text x="280" y="40" font-size="10" fill="blue">Train Accuracy</text>
+  </g>
+  
+  <!-- 损失子图 -->
+  <g transform="translate(480, 50)">
+    <text x="180" y="-10" font-size="14" text-anchor="middle">MRPC Loss</text>
+    <!-- X轴 -->
+    <line x1="0" y1="200" x2="360" y2="200" stroke="black" />
+    <text x="180" y="225" font-size="12" text-anchor="middle">Epoch</text>
+    <!-- Y轴 -->
+    <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
+    <text x="-30" y="100" font-size="12" text-anchor="middle" transform="rotate(-90, -30, 100)">Loss</text>
+    
+    <!-- 损失曲线 (0.4567, 0.3215, 0.2543, 0.2134, 0.1897) -->
+    <polyline points="0,180 90,130 180,100 270,85 360,75" fill="none" stroke="red" stroke-width="2" />
+    <circle cx="0" cy="180" r="4" fill="red" />
+    <circle cx="90" cy="130" r="4" fill="red" />
+    <circle cx="180" cy="100" r="4" fill="red" />
+    <circle cx="270" cy="85" r="4" fill="red" />
+    <circle cx="360" cy="75" r="4" fill="red" />
+    <text x="280" y="75" font-size="10" fill="red">Train Loss</text>
+  </g>
+</svg>

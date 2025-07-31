@@ -1,0 +1,40 @@
+<svg width="864" height="360" xmlns="http://www.w3.org/2000/svg">
+  <!-- 标题和坐标轴定义 -->
+  <text x="432" y="20" font-size="16" text-anchor="middle" font-weight="bold">SST-2 Training Curves</text>
+  
+  <!-- 准确率子图 -->
+  <g transform="translate(50, 50)">
+    <text x="180" y="-10" font-size="14" text-anchor="middle">SST-2 Accuracy</text>
+    <!-- X轴 -->
+    <line x1="0" y1="200" x2="360" y2="200" stroke="black" />
+    <text x="180" y="225" font-size="12" text-anchor="middle">Epoch</text>
+    <!-- Y轴 -->
+    <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
+    <text x="-30" y="100" font-size="12" text-anchor="middle" transform="rotate(-90, -30, 100)">Accuracy</text>
+    
+    <!-- 准确率曲线 (0.8562, 0.9215, 0.9387) -->
+    <polyline points="0,50 120,25 240,18" fill="none" stroke="blue" stroke-width="2" />
+    <circle cx="0" cy="50" r="4" fill="blue" />
+    <circle cx="120" cy="25" r="4" fill="blue" />
+    <circle cx="240" cy="18" r="4" fill="blue" />
+    <text x="280" y="18" font-size="10" fill="blue">Train Accuracy</text>
+  </g>
+  
+  <!-- 损失子图 -->
+  <g transform="translate(480, 50)">
+    <text x="180" y="-10" font-size="14" text-anchor="middle">SST-2 Loss</text>
+    <!-- X轴 -->
+    <line x1="0" y1="200" x2="360" y2="200" stroke="black" />
+    <text x="180" y="225" font-size="12" text-anchor="middle">Epoch</text>
+    <!-- Y轴 -->
+    <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
+    <text x="-30" y="100" font-size="12" text-anchor="middle" transform="rotate(-90, -30, 100)">Loss</text>
+    
+    <!-- 损失曲线 (0.3245, 0.1872, 0.1523) -->
+    <polyline points="0,160 120,90 240,75" fill="none" stroke="red" stroke-width="2" />
+    <circle cx="0" cy="160" r="4" fill="red" />
+    <circle cx="120" cy="90" r="4" fill="red" />
+    <circle cx="240" cy="75" r="4" fill="red" />
+    <text x="280" y="75" font-size="10" fill="red">Train Loss</text>
+  </g>
+</svg>

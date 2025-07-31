@@ -1,0 +1,41 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <text x="300" y="30" font-size="16" text-anchor="middle" font-weight="bold">单节点vs分布式训练时间对比（分钟）</text>
+  
+  <!-- X轴 -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="black" />
+  <text x="300" y="330" font-size="14" text-anchor="middle">任务类型</text>
+  
+  <!-- Y轴 -->
+  <line x1="100" y1="50" x2="100" y2="300" stroke="black" />
+  <text x="60" y="175" font-size="14" text-anchor="middle" transform="rotate(-90, 60, 175)">训练时间（分钟）</text>
+  
+  <!-- 坐标轴刻度 -->
+  <line x1="100" y1="305" x2="100" y2="295" stroke="black" />
+  <text x="100" y="320" font-size="12" text-anchor="middle">SST-2</text>
+  
+  <line x1="300" y1="305" x2="300" y2="295" stroke="black" />
+  <text x="300" y="320" font-size="12" text-anchor="middle">MRPC</text>
+  
+  <line x1="500" y1="305" x2="500" y2="295" stroke="black" />
+  <text x="500" y="320" font-size="12" text-anchor="middle">平均</text>
+  
+  <!-- 柱状图 -->
+  <!-- SST-2 -->
+  <rect x="70" y="100" width="50" height="200" fill="#FF6B6B" />  <!-- 单节点：145分钟 -->
+  <rect x="130" y="255" width="50" height="45" fill="#4ECDC4" />   <!-- 分布式：45分钟 -->
+  
+  <!-- MRPC -->
+  <rect x="270" y="150" width="50" height="150" fill="#FF6B6B" />  <!-- 单节点：98分钟 -->
+  <rect x="330" y="269" width="50" height="31" fill="#4ECDC4" />   <!-- 分布式：31分钟 -->
+  
+  <!-- 平均 -->
+  <rect x="470" y="125" width="50" height="175" fill="#FF6B6B" />  <!-- 单节点：(145+98)/2=121.5 -->
+  <rect x="530" y="262" width="50" height="38" fill="#4ECDC4" />   <!-- 分布式：(45+31)/2=38 -->
+  
+  <!-- 图例 -->
+  <rect x="400" y="50" width="20" height="20" fill="#FF6B6B" />
+  <text x="430" y="65" font-size="12">单节点训练</text>
+  
+  <rect x="400" y="80" width="20" height="20" fill="#4ECDC4" />
+  <text x="430" y="95" font-size="12">分布式训练（4节点）</text>
+</svg>
